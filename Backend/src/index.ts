@@ -1,16 +1,16 @@
 import express, { Request, Response } from "express";
 import cors from "cors";
 import "dotenv/config";
-// import mongoose from "mongoose";
+import mongoose from "mongoose";
 // import myUserRoute from "./routes/MyUserRoute";
 // import { v2 as cloudinary } from "cloudinary";
 // import myRestaurantRoute from "./routes/MyRestaurantRoute";
 // import restaurantRoute from "./routes/RestaurantRoute";
 // import orderRoute from "./routes/OrderRoute";
 
-// mongoose
-//   .connect(process.env.MONGODB_CONNECTION_STRING as string)
-//   .then(() => console.log("Connected to database!"));
+mongoose
+  .connect(process.env.MONGODB_CONNECTION_STRING as string)
+  .then(() => console.log("Connected to Database!"));
 
 // cloudinary.config({
 //   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
